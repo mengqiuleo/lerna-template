@@ -14,11 +14,13 @@ export default [{
     plugins: [
         resolve({ extensions }),
         babel({ extensions, include: ['./src/**/*'] }),
+        // terser()
     ],
     output: [
         // { file: pkg.browser, format: 'iife', name: 'window', extend: true, globals: {} },
         // { file: pkg.browserMin, format: 'iife', name: 'window', extend: true, globals: {}, plugins: [terser()] },
-        { file: pkg.module, format: 'es' },
+        {  file: `dist/index.esm.js`, format: 'esm' },
+        {  file: `dist/index.cjs.js`, format: 'cjs' },
         // { file: pkg.moduleMin, format: 'es', plugins: [terser()] },
         // { file: pkg.unpkg, format: 'umd', name: 'app' },
     ],

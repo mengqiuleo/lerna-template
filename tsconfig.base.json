@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "baseUrl": "./packages",
-    "paths": {
-      // "@ts-lernarepo/log": ["log/src/"],
-      "@ts-lernarepo/*": ["*/src/index"]
-    },
+    "baseUrl": ".",
+    // "paths": {
+    //   "@ts-lernarepo/log": ["log/src/index"]
+    //   // "@ts-lernarepo/*": ["*/src/index"]
+    // },
     /* Basic Options */
     // "incremental": true,                   /* Enable incremental compilation */
     "target": "ESNEXT",                          /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */

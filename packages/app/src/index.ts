@@ -1,3 +1,7 @@
+// @ts-ignore
 import log from "@ts-lernarepo/log";
 
-log("app started");
+export default function minus(str: string){
+  const res =  log(str)
+  return res
+}
